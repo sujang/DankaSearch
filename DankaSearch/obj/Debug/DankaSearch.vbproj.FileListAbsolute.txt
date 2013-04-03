@@ -1,0 +1,10 @@
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\DankaSearch.exe.config
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\DankaSearch.exe
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\DankaSearch.pdb
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\DankaSearch.xml
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.frmMain.resources
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.Resources.resources
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.vbproj.GenerateResource.Cache
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.exe
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.xml
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.pdb
