@@ -8,3 +8,7 @@ C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\o
 C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.exe
 C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.xml
 C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.pdb
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\DankaSearch.exe.manifest
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\DankaSearch.application
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.exe.manifest
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.application

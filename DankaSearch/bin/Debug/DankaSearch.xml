@@ -291,6 +291,14 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
   厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
   現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
 </summary>
+</member><member name="P:DankaSearch.My.Resources.Resources.JiinDataPath">
+	<summary>
+  C:\Program Files\jiin2000 に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:DankaSearch.My.Resources.Resources.MdbFile">
+	<summary>
+  寺院Data.mdb に類似しているローカライズされた文字列を検索します。
+</summary>
 </member><member name="T:DankaSearch.My.Resources.Resources">
 	<summary>
   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。

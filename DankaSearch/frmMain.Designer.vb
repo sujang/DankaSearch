@@ -26,6 +26,7 @@ Partial Class frmMain
         Dim 戸主氏名Label As System.Windows.Forms.Label
         Dim ふりがなLabel As System.Windows.Forms.Label
         Dim 檀家番号Label As System.Windows.Forms.Label
+        Dim 入檀年月日Label As System.Windows.Forms.Label
         Me.T_D_檀家BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JiinDataDataSet = New DankaSearch.JiinDataDataSet()
         Me.txtDankaNo = New System.Windows.Forms.TextBox()
@@ -51,9 +52,11 @@ Partial Class frmMain
         Me.T_D_檀家TableAdapter = New DankaSearch.JiinDataDataSetTableAdapters.T_D_檀家TableAdapter()
         Me.TableAdapterManager = New DankaSearch.JiinDataDataSetTableAdapters.TableAdapterManager()
         Me.T_D_過去帳TableAdapter = New DankaSearch.JiinDataDataSetTableAdapters.T_D_過去帳TableAdapter()
+        Me.入檀年月日Label1 = New System.Windows.Forms.Label()
         戸主氏名Label = New System.Windows.Forms.Label()
         ふりがなLabel = New System.Windows.Forms.Label()
         檀家番号Label = New System.Windows.Forms.Label()
+        入檀年月日Label = New System.Windows.Forms.Label()
         CType(Me.T_D_檀家BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JiinDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.T_D_過去帳BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,7 +106,6 @@ Partial Class frmMain
         '
         'txtDankaNo
         '
-        Me.txtDankaNo.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "檀家番号", True))
         Me.txtDankaNo.Font = New System.Drawing.Font("MS UI Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.txtDankaNo.Location = New System.Drawing.Point(194, 56)
         Me.txtDankaNo.Name = "txtDankaNo"
@@ -117,14 +119,17 @@ Partial Class frmMain
         '
         'T_D_過去帳DataGridView
         '
+        Me.T_D_過去帳DataGridView.AllowUserToAddRows = False
+        Me.T_D_過去帳DataGridView.AllowUserToDeleteRows = False
         Me.T_D_過去帳DataGridView.AutoGenerateColumns = False
         Me.T_D_過去帳DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.T_D_過去帳DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewCheckBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
         Me.T_D_過去帳DataGridView.DataSource = Me.T_D_過去帳BindingSource
-        Me.T_D_過去帳DataGridView.Location = New System.Drawing.Point(12, 247)
+        Me.T_D_過去帳DataGridView.Location = New System.Drawing.Point(12, 360)
         Me.T_D_過去帳DataGridView.Name = "T_D_過去帳DataGridView"
+        Me.T_D_過去帳DataGridView.ReadOnly = True
         Me.T_D_過去帳DataGridView.RowTemplate.Height = 21
-        Me.T_D_過去帳DataGridView.Size = New System.Drawing.Size(760, 303)
+        Me.T_D_過去帳DataGridView.Size = New System.Drawing.Size(760, 190)
         Me.T_D_過去帳DataGridView.TabIndex = 7
         '
         'DataGridViewTextBoxColumn1
@@ -231,28 +236,30 @@ Partial Class frmMain
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "メニュー"
-        Me.GroupBox1.Visible = False
         '
         'Button4
         '
+        Me.Button4.Enabled = False
         Me.Button4.Location = New System.Drawing.Point(39, 135)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(207, 43)
         Me.Button4.TabIndex = 0
-        Me.Button4.Text = "過去帳出力"
+        Me.Button4.Text = "詳細編集"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
+        Me.Button3.Enabled = False
         Me.Button3.Location = New System.Drawing.Point(39, 86)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(207, 43)
         Me.Button3.TabIndex = 0
-        Me.Button3.Text = "過去帳出力"
+        Me.Button3.Text = "帳票印刷"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
+        Me.Button2.Enabled = False
         Me.Button2.Location = New System.Drawing.Point(39, 37)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(207, 43)
@@ -288,11 +295,33 @@ Partial Class frmMain
         '
         Me.T_D_過去帳TableAdapter.ClearBeforeFill = True
         '
+        '入檀年月日Label
+        '
+        入檀年月日Label.AutoSize = True
+        入檀年月日Label.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        入檀年月日Label.Location = New System.Drawing.Point(6, 232)
+        入檀年月日Label.Name = "入檀年月日Label"
+        入檀年月日Label.Size = New System.Drawing.Size(182, 33)
+        入檀年月日Label.TabIndex = 11
+        入檀年月日Label.Text = "入檀年月日:"
+        '
+        '入檀年月日Label1
+        '
+        Me.入檀年月日Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "入檀年月日", True))
+        Me.入檀年月日Label1.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        Me.入檀年月日Label1.Location = New System.Drawing.Point(194, 232)
+        Me.入檀年月日Label1.Name = "入檀年月日Label1"
+        Me.入檀年月日Label1.Size = New System.Drawing.Size(312, 33)
+        Me.入檀年月日Label1.TabIndex = 12
+        Me.入檀年月日Label1.Text = "Label1"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(792, 570)
+        Me.ClientSize = New System.Drawing.Size(800, 570)
+        Me.Controls.Add(入檀年月日Label)
+        Me.Controls.Add(Me.入檀年月日Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.lblName)
@@ -338,5 +367,6 @@ Partial Class frmMain
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents 入檀年月日Label1 As System.Windows.Forms.Label
 
 End Class

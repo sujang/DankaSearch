@@ -59,5 +59,23 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  C:\Program Files\jiin2000 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property JiinDataPath() As String
+            Get
+                Return ResourceManager.GetString("JiinDataPath", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  寺院Data.mdb に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property MdbFile() As String
+            Get
+                Return ResourceManager.GetString("MdbFile", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace
