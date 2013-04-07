@@ -94,6 +94,16 @@ Partial Class frmMain
         檀家番号Label.TabIndex = 5
         檀家番号Label.Text = "檀家番号:"
         '
+        '入檀年月日Label
+        '
+        入檀年月日Label.AutoSize = True
+        入檀年月日Label.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        入檀年月日Label.Location = New System.Drawing.Point(6, 232)
+        入檀年月日Label.Name = "入檀年月日Label"
+        入檀年月日Label.Size = New System.Drawing.Size(182, 33)
+        入檀年月日Label.TabIndex = 11
+        入檀年月日Label.Text = "入檀年月日:"
+        '
         'T_D_檀家BindingSource
         '
         Me.T_D_檀家BindingSource.DataMember = "T_D_檀家"
@@ -137,60 +147,70 @@ Partial Class frmMain
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "過去ID"
         Me.DataGridViewTextBoxColumn1.HeaderText = "過去ID"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
         'DataGridViewCheckBoxColumn1
         '
         Me.DataGridViewCheckBoxColumn1.DataPropertyName = "印刷"
         Me.DataGridViewCheckBoxColumn1.HeaderText = "印刷"
         Me.DataGridViewCheckBoxColumn1.Name = "DataGridViewCheckBoxColumn1"
+        Me.DataGridViewCheckBoxColumn1.ReadOnly = True
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "檀家ID"
         Me.DataGridViewTextBoxColumn2.HeaderText = "檀家ID"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "戒名"
         Me.DataGridViewTextBoxColumn3.HeaderText = "戒名"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "命日"
         Me.DataGridViewTextBoxColumn4.HeaderText = "命日"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "俗名"
         Me.DataGridViewTextBoxColumn5.HeaderText = "俗名"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
         '
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.DataPropertyName = "享年"
         Me.DataGridViewTextBoxColumn6.HeaderText = "享年"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
         '
         'DataGridViewTextBoxColumn7
         '
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "続柄ID"
         Me.DataGridViewTextBoxColumn7.HeaderText = "続柄ID"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
         'DataGridViewTextBoxColumn8
         '
         Me.DataGridViewTextBoxColumn8.DataPropertyName = "喪主名"
         Me.DataGridViewTextBoxColumn8.HeaderText = "喪主名"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
         '
         'DataGridViewTextBoxColumn9
         '
         Me.DataGridViewTextBoxColumn9.DataPropertyName = "備考"
         Me.DataGridViewTextBoxColumn9.HeaderText = "備考"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
         '
         'lblKana
         '
@@ -294,16 +314,6 @@ Partial Class frmMain
         'T_D_過去帳TableAdapter
         '
         Me.T_D_過去帳TableAdapter.ClearBeforeFill = True
-        '
-        '入檀年月日Label
-        '
-        入檀年月日Label.AutoSize = True
-        入檀年月日Label.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
-        入檀年月日Label.Location = New System.Drawing.Point(6, 232)
-        入檀年月日Label.Name = "入檀年月日Label"
-        入檀年月日Label.Size = New System.Drawing.Size(182, 33)
-        入檀年月日Label.TabIndex = 11
-        入檀年月日Label.Text = "入檀年月日:"
         '
         '入檀年月日Label1
         '
