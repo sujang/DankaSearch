@@ -2,6 +2,10 @@
 
 Public Class frmMain
 
+    Private Sub frmMain_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        Me.txtDankaNo.Text = Me.txtDankaNo.Text & e.KeyValue
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Try
@@ -44,6 +48,9 @@ Public Class frmMain
 
         Me.T_D_檀家BindingSource.Position = index
 
+        For Each ctrl As Control In Me.grpMenu.Controls
+            ctrl.Enabled = Not Me.T_D_檀家BindingSource.IsBindingSuspended
+        Next
     End Sub
 
     Private Sub InitForm()
@@ -63,4 +70,9 @@ Public Class frmMain
 
     End Sub
 
+    Private Sub btnDetail_Click(sender As Object, e As EventArgs) Handles btnDetail.Click
+        Dim row As JiinDataDataSet.T_D_檀家Row = DirectCast(DirectCast(Me.T_D_檀家BindingSource.Current, DataRowView).Row, JiinDataDataSet.T_D_檀家Row)
+        Dim detail As Form = New frmDetail(row)
+        detail.ShowDialog()
+    End Sub
 End Class

@@ -27,6 +27,10 @@ Partial Class frmMain
         Dim ふりがなLabel As System.Windows.Forms.Label
         Dim 檀家番号Label As System.Windows.Forms.Label
         Dim 入檀年月日Label As System.Windows.Forms.Label
+        Dim _Label As System.Windows.Forms.Label
+        Dim 住所1Label As System.Windows.Forms.Label
+        Dim 住所2Label As System.Windows.Forms.Label
+        Dim 墓地Label As System.Windows.Forms.Label
         Me.T_D_檀家BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JiinDataDataSet = New DankaSearch.JiinDataDataSet()
         Me.txtDankaNo = New System.Windows.Forms.TextBox()
@@ -45,40 +49,48 @@ Partial Class frmMain
         Me.lblKana = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
         Me.btnSearch = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.grpMenu = New System.Windows.Forms.GroupBox()
+        Me.btnDetail = New System.Windows.Forms.Button()
+        Me.btnReport = New System.Windows.Forms.Button()
+        Me.btnRegistParent = New System.Windows.Forms.Button()
         Me.T_D_檀家TableAdapter = New DankaSearch.JiinDataDataSetTableAdapters.T_D_檀家TableAdapter()
         Me.TableAdapterManager = New DankaSearch.JiinDataDataSetTableAdapters.TableAdapterManager()
         Me.T_D_過去帳TableAdapter = New DankaSearch.JiinDataDataSetTableAdapters.T_D_過去帳TableAdapter()
         Me.入檀年月日Label1 = New System.Windows.Forms.Label()
+        Me._Label1 = New System.Windows.Forms.Label()
+        Me.住所1Label1 = New System.Windows.Forms.Label()
+        Me.住所2Label1 = New System.Windows.Forms.Label()
+        Me.墓地Label1 = New System.Windows.Forms.Label()
         戸主氏名Label = New System.Windows.Forms.Label()
         ふりがなLabel = New System.Windows.Forms.Label()
         檀家番号Label = New System.Windows.Forms.Label()
         入檀年月日Label = New System.Windows.Forms.Label()
+        _Label = New System.Windows.Forms.Label()
+        住所1Label = New System.Windows.Forms.Label()
+        住所2Label = New System.Windows.Forms.Label()
+        墓地Label = New System.Windows.Forms.Label()
         CType(Me.T_D_檀家BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JiinDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.T_D_過去帳BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.T_D_過去帳DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
+        Me.grpMenu.SuspendLayout()
         Me.SuspendLayout()
         '
         '戸主氏名Label
         '
         戸主氏名Label.AutoSize = True
         戸主氏名Label.Font = New System.Drawing.Font("MS UI Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        戸主氏名Label.Location = New System.Drawing.Point(38, 139)
+        戸主氏名Label.Location = New System.Drawing.Point(38, 123)
         戸主氏名Label.Name = "戸主氏名Label"
         戸主氏名Label.Size = New System.Drawing.Size(150, 33)
-        戸主氏名Label.TabIndex = 1
+        戸主氏名Label.TabIndex = 0
         戸主氏名Label.Text = "戸主氏名:"
         '
         'ふりがなLabel
         '
         ふりがなLabel.AutoSize = True
         ふりがなLabel.Font = New System.Drawing.Font("MS UI Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        ふりがなLabel.Location = New System.Drawing.Point(66, 187)
+        ふりがなLabel.Location = New System.Drawing.Point(66, 168)
         ふりがなLabel.Name = "ふりがなLabel"
         ふりがなLabel.Size = New System.Drawing.Size(122, 33)
         ふりがなLabel.TabIndex = 3
@@ -98,11 +110,51 @@ Partial Class frmMain
         '
         入檀年月日Label.AutoSize = True
         入檀年月日Label.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
-        入檀年月日Label.Location = New System.Drawing.Point(6, 232)
+        入檀年月日Label.Location = New System.Drawing.Point(6, 213)
         入檀年月日Label.Name = "入檀年月日Label"
         入檀年月日Label.Size = New System.Drawing.Size(182, 33)
         入檀年月日Label.TabIndex = 11
         入檀年月日Label.Text = "入檀年月日:"
+        '
+        '_Label
+        '
+        _Label.AutoSize = True
+        _Label.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        _Label.Location = New System.Drawing.Point(134, 258)
+        _Label.Name = "_Label"
+        _Label.Size = New System.Drawing.Size(54, 33)
+        _Label.TabIndex = 12
+        _Label.Text = "〒:"
+        '
+        '住所1Label
+        '
+        住所1Label.AutoSize = True
+        住所1Label.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        住所1Label.Location = New System.Drawing.Point(86, 303)
+        住所1Label.Name = "住所1Label"
+        住所1Label.Size = New System.Drawing.Size(102, 33)
+        住所1Label.TabIndex = 13
+        住所1Label.Text = "住所1:"
+        '
+        '住所2Label
+        '
+        住所2Label.AutoSize = True
+        住所2Label.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        住所2Label.Location = New System.Drawing.Point(86, 348)
+        住所2Label.Name = "住所2Label"
+        住所2Label.Size = New System.Drawing.Size(102, 33)
+        住所2Label.TabIndex = 15
+        住所2Label.Text = "住所2:"
+        '
+        '墓地Label
+        '
+        墓地Label.AutoSize = True
+        墓地Label.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        墓地Label.Location = New System.Drawing.Point(328, 213)
+        墓地Label.Name = "墓地Label"
+        墓地Label.Size = New System.Drawing.Size(86, 33)
+        墓地Label.TabIndex = 17
+        墓地Label.Text = "墓地:"
         '
         'T_D_檀家BindingSource
         '
@@ -119,8 +171,8 @@ Partial Class frmMain
         Me.txtDankaNo.Font = New System.Drawing.Font("MS UI Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.txtDankaNo.Location = New System.Drawing.Point(194, 56)
         Me.txtDankaNo.Name = "txtDankaNo"
-        Me.txtDankaNo.Size = New System.Drawing.Size(85, 39)
-        Me.txtDankaNo.TabIndex = 6
+        Me.txtDankaNo.Size = New System.Drawing.Size(128, 39)
+        Me.txtDankaNo.TabIndex = 0
         '
         'T_D_過去帳BindingSource
         '
@@ -135,12 +187,12 @@ Partial Class frmMain
         Me.T_D_過去帳DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.T_D_過去帳DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewCheckBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
         Me.T_D_過去帳DataGridView.DataSource = Me.T_D_過去帳BindingSource
-        Me.T_D_過去帳DataGridView.Location = New System.Drawing.Point(12, 360)
+        Me.T_D_過去帳DataGridView.Location = New System.Drawing.Point(12, 400)
         Me.T_D_過去帳DataGridView.Name = "T_D_過去帳DataGridView"
         Me.T_D_過去帳DataGridView.ReadOnly = True
         Me.T_D_過去帳DataGridView.RowTemplate.Height = 21
-        Me.T_D_過去帳DataGridView.Size = New System.Drawing.Size(760, 190)
-        Me.T_D_過去帳DataGridView.TabIndex = 7
+        Me.T_D_過去帳DataGridView.Size = New System.Drawing.Size(760, 222)
+        Me.T_D_過去帳DataGridView.TabIndex = 2
         '
         'DataGridViewTextBoxColumn1
         '
@@ -216,7 +268,7 @@ Partial Class frmMain
         '
         Me.lblKana.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "ふりがな", True))
         Me.lblKana.Font = New System.Drawing.Font("MS UI Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.lblKana.Location = New System.Drawing.Point(194, 187)
+        Me.lblKana.Location = New System.Drawing.Point(194, 168)
         Me.lblKana.Name = "lblKana"
         Me.lblKana.Size = New System.Drawing.Size(312, 33)
         Me.lblKana.TabIndex = 8
@@ -227,7 +279,7 @@ Partial Class frmMain
         '
         Me.lblName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "戸主氏名", True))
         Me.lblName.Font = New System.Drawing.Font("MS UI Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.lblName.Location = New System.Drawing.Point(194, 139)
+        Me.lblName.Location = New System.Drawing.Point(194, 123)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(312, 33)
         Me.lblName.TabIndex = 9
@@ -237,55 +289,55 @@ Partial Class frmMain
         'btnSearch
         '
         Me.btnSearch.Font = New System.Drawing.Font("MS UI Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.btnSearch.Location = New System.Drawing.Point(295, 49)
+        Me.btnSearch.Location = New System.Drawing.Point(328, 49)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(119, 52)
-        Me.btnSearch.TabIndex = 10
+        Me.btnSearch.TabIndex = 1
         Me.btnSearch.Text = "検索"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'grpMenu
         '
-        Me.GroupBox1.Controls.Add(Me.Button4)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(512, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(268, 208)
-        Me.GroupBox1.TabIndex = 11
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "メニュー"
+        Me.grpMenu.Controls.Add(Me.btnDetail)
+        Me.grpMenu.Controls.Add(Me.btnReport)
+        Me.grpMenu.Controls.Add(Me.btnRegistParent)
+        Me.grpMenu.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.grpMenu.Location = New System.Drawing.Point(512, 12)
+        Me.grpMenu.Name = "grpMenu"
+        Me.grpMenu.Size = New System.Drawing.Size(268, 189)
+        Me.grpMenu.TabIndex = 11
+        Me.grpMenu.TabStop = False
+        Me.grpMenu.Text = "メニュー"
         '
-        'Button4
+        'btnDetail
         '
-        Me.Button4.Enabled = False
-        Me.Button4.Location = New System.Drawing.Point(39, 135)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(207, 43)
-        Me.Button4.TabIndex = 0
-        Me.Button4.Text = "詳細編集"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnDetail.Enabled = False
+        Me.btnDetail.Location = New System.Drawing.Point(39, 135)
+        Me.btnDetail.Name = "btnDetail"
+        Me.btnDetail.Size = New System.Drawing.Size(207, 43)
+        Me.btnDetail.TabIndex = 2
+        Me.btnDetail.Text = "詳細確認"
+        Me.btnDetail.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnReport
         '
-        Me.Button3.Enabled = False
-        Me.Button3.Location = New System.Drawing.Point(39, 86)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(207, 43)
-        Me.Button3.TabIndex = 0
-        Me.Button3.Text = "帳票印刷"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnReport.Enabled = False
+        Me.btnReport.Location = New System.Drawing.Point(39, 86)
+        Me.btnReport.Name = "btnReport"
+        Me.btnReport.Size = New System.Drawing.Size(207, 43)
+        Me.btnReport.TabIndex = 1
+        Me.btnReport.Text = "帳票印刷メニュー"
+        Me.btnReport.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnRegistParent
         '
-        Me.Button2.Enabled = False
-        Me.Button2.Location = New System.Drawing.Point(39, 37)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(207, 43)
-        Me.Button2.TabIndex = 0
-        Me.Button2.Text = "過去帳出力"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnRegistParent.Enabled = False
+        Me.btnRegistParent.Location = New System.Drawing.Point(39, 37)
+        Me.btnRegistParent.Name = "btnRegistParent"
+        Me.btnRegistParent.Size = New System.Drawing.Size(207, 43)
+        Me.btnRegistParent.TabIndex = 0
+        Me.btnRegistParent.Text = "戸主登録"
+        Me.btnRegistParent.UseVisualStyleBackColor = True
         '
         'T_D_檀家TableAdapter
         '
@@ -319,20 +371,68 @@ Partial Class frmMain
         '
         Me.入檀年月日Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "入檀年月日", True))
         Me.入檀年月日Label1.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
-        Me.入檀年月日Label1.Location = New System.Drawing.Point(194, 232)
+        Me.入檀年月日Label1.Location = New System.Drawing.Point(194, 213)
         Me.入檀年月日Label1.Name = "入檀年月日Label1"
-        Me.入檀年月日Label1.Size = New System.Drawing.Size(312, 33)
+        Me.入檀年月日Label1.Size = New System.Drawing.Size(128, 33)
         Me.入檀年月日Label1.TabIndex = 12
         Me.入檀年月日Label1.Text = "Label1"
+        '
+        '_Label1
+        '
+        Me._Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "〒", True))
+        Me._Label1.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        Me._Label1.Location = New System.Drawing.Point(194, 258)
+        Me._Label1.Name = "_Label1"
+        Me._Label1.Size = New System.Drawing.Size(179, 33)
+        Me._Label1.TabIndex = 13
+        Me._Label1.Text = "Label1"
+        '
+        '住所1Label1
+        '
+        Me.住所1Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "住所1", True))
+        Me.住所1Label1.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        Me.住所1Label1.Location = New System.Drawing.Point(194, 348)
+        Me.住所1Label1.Name = "住所1Label1"
+        Me.住所1Label1.Size = New System.Drawing.Size(586, 33)
+        Me.住所1Label1.TabIndex = 14
+        Me.住所1Label1.Text = "Label1"
+        '
+        '住所2Label1
+        '
+        Me.住所2Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "住所2", True))
+        Me.住所2Label1.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        Me.住所2Label1.Location = New System.Drawing.Point(194, 303)
+        Me.住所2Label1.Name = "住所2Label1"
+        Me.住所2Label1.Size = New System.Drawing.Size(586, 33)
+        Me.住所2Label1.TabIndex = 16
+        Me.住所2Label1.Text = "Label1"
+        '
+        '墓地Label1
+        '
+        Me.墓地Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "墓地", True))
+        Me.墓地Label1.Font = New System.Drawing.Font("MS UI Gothic", 24.0!)
+        Me.墓地Label1.Location = New System.Drawing.Point(420, 213)
+        Me.墓地Label1.Name = "墓地Label1"
+        Me.墓地Label1.Size = New System.Drawing.Size(179, 33)
+        Me.墓地Label1.TabIndex = 18
+        Me.墓地Label1.Text = "Label1"
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 570)
+        Me.ClientSize = New System.Drawing.Size(800, 642)
+        Me.Controls.Add(墓地Label)
+        Me.Controls.Add(Me.墓地Label1)
+        Me.Controls.Add(住所2Label)
+        Me.Controls.Add(Me.住所2Label1)
+        Me.Controls.Add(住所1Label)
+        Me.Controls.Add(Me.住所1Label1)
+        Me.Controls.Add(_Label)
+        Me.Controls.Add(Me._Label1)
         Me.Controls.Add(入檀年月日Label)
         Me.Controls.Add(Me.入檀年月日Label1)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.grpMenu)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.lblKana)
@@ -347,7 +447,7 @@ Partial Class frmMain
         CType(Me.JiinDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.T_D_過去帳BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.T_D_過去帳DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
+        Me.grpMenu.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -373,10 +473,14 @@ Partial Class frmMain
     Friend WithEvents lblKana As System.Windows.Forms.Label
     Friend WithEvents lblName As System.Windows.Forms.Label
     Friend WithEvents btnSearch As System.Windows.Forms.Button
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents grpMenu As System.Windows.Forms.GroupBox
+    Friend WithEvents btnDetail As System.Windows.Forms.Button
+    Friend WithEvents btnReport As System.Windows.Forms.Button
+    Friend WithEvents btnRegistParent As System.Windows.Forms.Button
     Friend WithEvents 入檀年月日Label1 As System.Windows.Forms.Label
+    Friend WithEvents _Label1 As System.Windows.Forms.Label
+    Friend WithEvents 住所1Label1 As System.Windows.Forms.Label
+    Friend WithEvents 住所2Label1 As System.Windows.Forms.Label
+    Friend WithEvents 墓地Label1 As System.Windows.Forms.Label
 
 End Class

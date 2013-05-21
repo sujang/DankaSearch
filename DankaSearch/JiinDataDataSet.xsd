@@ -860,7 +860,7 @@
   <xs:element name="JiinDataDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="JiinDataDataSet" msprop:Generator_UserDSName="JiinDataDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="T_D_過去帳" msprop:Generator_TableClassName="T_D_過去帳DataTable" msprop:Generator_TableVarName="tableT_D_過去帳" msprop:Generator_TablePropName="T_D_過去帳" msprop:Generator_RowDeletingName="T_D_過去帳RowDeleting" msprop:Generator_RowChangingName="T_D_過去帳RowChanging" msprop:Generator_RowEvHandlerName="T_D_過去帳RowChangeEventHandler" msprop:Generator_RowDeletedName="T_D_過去帳RowDeleted" msprop:Generator_UserTableName="T_D_過去帳" msprop:Generator_RowChangedName="T_D_過去帳RowChanged" msprop:Generator_RowEvArgName="T_D_過去帳RowChangeEvent" msprop:Generator_RowClassName="T_D_過去帳Row">
+        <xs:element name="T_D_過去帳" msprop:Generator_TableClassName="T_D_過去帳DataTable" msprop:Generator_TableVarName="tableT_D_過去帳" msprop:Generator_RowChangedName="T_D_過去帳RowChanged" msprop:Generator_TablePropName="T_D_過去帳" msprop:Generator_RowDeletingName="T_D_過去帳RowDeleting" msprop:Generator_RowChangingName="T_D_過去帳RowChanging" msprop:Generator_RowEvHandlerName="T_D_過去帳RowChangeEventHandler" msprop:Generator_RowDeletedName="T_D_過去帳RowDeleted" msprop:Generator_RowClassName="T_D_過去帳Row" msprop:Generator_UserTableName="T_D_過去帳" msprop:Generator_RowEvArgName="T_D_過去帳RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="過去ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="column過去ID" msprop:Generator_ColumnPropNameInRow="過去ID" msprop:Generator_ColumnPropNameInTable="過去IDColumn" msprop:Generator_UserColumnName="過去ID" type="xs:int" />
@@ -900,7 +900,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_D_資料配付区分" msprop:Generator_TableClassName="T_D_資料配付区分DataTable" msprop:Generator_TableVarName="tableT_D_資料配付区分" msprop:Generator_TablePropName="T_D_資料配付区分" msprop:Generator_RowDeletingName="T_D_資料配付区分RowDeleting" msprop:Generator_RowChangingName="T_D_資料配付区分RowChanging" msprop:Generator_RowEvHandlerName="T_D_資料配付区分RowChangeEventHandler" msprop:Generator_RowDeletedName="T_D_資料配付区分RowDeleted" msprop:Generator_UserTableName="T_D_資料配付区分" msprop:Generator_RowChangedName="T_D_資料配付区分RowChanged" msprop:Generator_RowEvArgName="T_D_資料配付区分RowChangeEvent" msprop:Generator_RowClassName="T_D_資料配付区分Row">
+        <xs:element name="T_D_資料配付区分" msprop:Generator_TableClassName="T_D_資料配付区分DataTable" msprop:Generator_TableVarName="tableT_D_資料配付区分" msprop:Generator_RowChangedName="T_D_資料配付区分RowChanged" msprop:Generator_TablePropName="T_D_資料配付区分" msprop:Generator_RowDeletingName="T_D_資料配付区分RowDeleting" msprop:Generator_RowChangingName="T_D_資料配付区分RowChanging" msprop:Generator_RowEvHandlerName="T_D_資料配付区分RowChangeEventHandler" msprop:Generator_RowDeletedName="T_D_資料配付区分RowDeleted" msprop:Generator_RowClassName="T_D_資料配付区分Row" msprop:Generator_UserTableName="T_D_資料配付区分" msprop:Generator_RowEvArgName="T_D_資料配付区分RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="檀家ID" msprop:Generator_ColumnVarNameInTable="column檀家ID" msprop:Generator_ColumnPropNameInRow="檀家ID" msprop:Generator_ColumnPropNameInTable="檀家IDColumn" msprop:Generator_UserColumnName="檀家ID" type="xs:int" minOccurs="0" />
@@ -908,7 +908,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_D_檀家" msprop:Generator_TableClassName="T_D_檀家DataTable" msprop:Generator_TableVarName="tableT_D_檀家" msprop:Generator_TablePropName="T_D_檀家" msprop:Generator_RowDeletingName="T_D_檀家RowDeleting" msprop:Generator_RowChangingName="T_D_檀家RowChanging" msprop:Generator_RowEvHandlerName="T_D_檀家RowChangeEventHandler" msprop:Generator_RowDeletedName="T_D_檀家RowDeleted" msprop:Generator_UserTableName="T_D_檀家" msprop:Generator_RowChangedName="T_D_檀家RowChanged" msprop:Generator_RowEvArgName="T_D_檀家RowChangeEvent" msprop:Generator_RowClassName="T_D_檀家Row">
+        <xs:element name="T_D_檀家" msprop:Generator_TableClassName="T_D_檀家DataTable" msprop:Generator_TableVarName="tableT_D_檀家" msprop:Generator_RowChangedName="T_D_檀家RowChanged" msprop:Generator_TablePropName="T_D_檀家" msprop:Generator_RowDeletingName="T_D_檀家RowDeleting" msprop:Generator_RowChangingName="T_D_檀家RowChanging" msprop:Generator_RowEvHandlerName="T_D_檀家RowChangeEventHandler" msprop:Generator_RowDeletedName="T_D_檀家RowDeleted" msprop:Generator_RowClassName="T_D_檀家Row" msprop:Generator_UserTableName="T_D_檀家" msprop:Generator_RowEvArgName="T_D_檀家RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="削除" msprop:Generator_ColumnVarNameInTable="column削除" msprop:Generator_ColumnPropNameInRow="削除" msprop:Generator_ColumnPropNameInTable="削除Column" msprop:Generator_UserColumnName="削除" type="xs:boolean" minOccurs="0" />
@@ -994,7 +994,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_印刷書体" msprop:Generator_TableClassName="T_M_印刷書体DataTable" msprop:Generator_TableVarName="tableT_M_印刷書体" msprop:Generator_TablePropName="T_M_印刷書体" msprop:Generator_RowDeletingName="T_M_印刷書体RowDeleting" msprop:Generator_RowChangingName="T_M_印刷書体RowChanging" msprop:Generator_RowEvHandlerName="T_M_印刷書体RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_印刷書体RowDeleted" msprop:Generator_UserTableName="T_M_印刷書体" msprop:Generator_RowChangedName="T_M_印刷書体RowChanged" msprop:Generator_RowEvArgName="T_M_印刷書体RowChangeEvent" msprop:Generator_RowClassName="T_M_印刷書体Row">
+        <xs:element name="T_M_印刷書体" msprop:Generator_TableClassName="T_M_印刷書体DataTable" msprop:Generator_TableVarName="tableT_M_印刷書体" msprop:Generator_RowChangedName="T_M_印刷書体RowChanged" msprop:Generator_TablePropName="T_M_印刷書体" msprop:Generator_RowDeletingName="T_M_印刷書体RowDeleting" msprop:Generator_RowChangingName="T_M_印刷書体RowChanging" msprop:Generator_RowEvHandlerName="T_M_印刷書体RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_印刷書体RowDeleted" msprop:Generator_RowClassName="T_M_印刷書体Row" msprop:Generator_UserTableName="T_M_印刷書体" msprop:Generator_RowEvArgName="T_M_印刷書体RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
@@ -1023,7 +1023,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_会費" msprop:Generator_TableClassName="T_M_会費DataTable" msprop:Generator_TableVarName="tableT_M_会費" msprop:Generator_TablePropName="T_M_会費" msprop:Generator_RowDeletingName="T_M_会費RowDeleting" msprop:Generator_RowChangingName="T_M_会費RowChanging" msprop:Generator_RowEvHandlerName="T_M_会費RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_会費RowDeleted" msprop:Generator_UserTableName="T_M_会費" msprop:Generator_RowChangedName="T_M_会費RowChanged" msprop:Generator_RowEvArgName="T_M_会費RowChangeEvent" msprop:Generator_RowClassName="T_M_会費Row">
+        <xs:element name="T_M_会費" msprop:Generator_TableClassName="T_M_会費DataTable" msprop:Generator_TableVarName="tableT_M_会費" msprop:Generator_RowChangedName="T_M_会費RowChanged" msprop:Generator_TablePropName="T_M_会費" msprop:Generator_RowDeletingName="T_M_会費RowDeleting" msprop:Generator_RowChangingName="T_M_会費RowChanging" msprop:Generator_RowEvHandlerName="T_M_会費RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_会費RowDeleted" msprop:Generator_RowClassName="T_M_会費Row" msprop:Generator_UserTableName="T_M_会費" msprop:Generator_RowEvArgName="T_M_会費RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" />
@@ -1038,7 +1038,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_戒名" msprop:Generator_TableClassName="T_M_戒名DataTable" msprop:Generator_TableVarName="tableT_M_戒名" msprop:Generator_TablePropName="T_M_戒名" msprop:Generator_RowDeletingName="T_M_戒名RowDeleting" msprop:Generator_RowChangingName="T_M_戒名RowChanging" msprop:Generator_RowEvHandlerName="T_M_戒名RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_戒名RowDeleted" msprop:Generator_UserTableName="T_M_戒名" msprop:Generator_RowChangedName="T_M_戒名RowChanged" msprop:Generator_RowEvArgName="T_M_戒名RowChangeEvent" msprop:Generator_RowClassName="T_M_戒名Row">
+        <xs:element name="T_M_戒名" msprop:Generator_TableClassName="T_M_戒名DataTable" msprop:Generator_TableVarName="tableT_M_戒名" msprop:Generator_RowChangedName="T_M_戒名RowChanged" msprop:Generator_TablePropName="T_M_戒名" msprop:Generator_RowDeletingName="T_M_戒名RowDeleting" msprop:Generator_RowChangingName="T_M_戒名RowChanging" msprop:Generator_RowEvHandlerName="T_M_戒名RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_戒名RowDeleted" msprop:Generator_RowClassName="T_M_戒名Row" msprop:Generator_UserTableName="T_M_戒名" msprop:Generator_RowEvArgName="T_M_戒名RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="戒名" msprop:Generator_ColumnVarNameInTable="column戒名" msprop:Generator_ColumnPropNameInRow="戒名" msprop:Generator_ColumnPropNameInTable="戒名Column" msprop:Generator_UserColumnName="戒名" minOccurs="0">
@@ -1058,7 +1058,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_環境設定" msprop:Generator_TableClassName="T_M_環境設定DataTable" msprop:Generator_TableVarName="tableT_M_環境設定" msprop:Generator_TablePropName="T_M_環境設定" msprop:Generator_RowDeletingName="T_M_環境設定RowDeleting" msprop:Generator_RowChangingName="T_M_環境設定RowChanging" msprop:Generator_RowEvHandlerName="T_M_環境設定RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_環境設定RowDeleted" msprop:Generator_UserTableName="T_M_環境設定" msprop:Generator_RowChangedName="T_M_環境設定RowChanged" msprop:Generator_RowEvArgName="T_M_環境設定RowChangeEvent" msprop:Generator_RowClassName="T_M_環境設定Row">
+        <xs:element name="T_M_環境設定" msprop:Generator_TableClassName="T_M_環境設定DataTable" msprop:Generator_TableVarName="tableT_M_環境設定" msprop:Generator_RowChangedName="T_M_環境設定RowChanged" msprop:Generator_TablePropName="T_M_環境設定" msprop:Generator_RowDeletingName="T_M_環境設定RowDeleting" msprop:Generator_RowChangingName="T_M_環境設定RowChanging" msprop:Generator_RowEvHandlerName="T_M_環境設定RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_環境設定RowDeleted" msprop:Generator_RowClassName="T_M_環境設定Row" msprop:Generator_UserTableName="T_M_環境設定" msprop:Generator_RowEvArgName="T_M_環境設定RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="御寺名" msprop:Generator_ColumnVarNameInTable="column御寺名" msprop:Generator_ColumnPropNameInRow="御寺名" msprop:Generator_ColumnPropNameInTable="御寺名Column" msprop:Generator_UserColumnName="御寺名" minOccurs="0">
@@ -1137,7 +1137,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_元号" msprop:Generator_TableClassName="T_M_元号DataTable" msprop:Generator_TableVarName="tableT_M_元号" msprop:Generator_TablePropName="T_M_元号" msprop:Generator_RowDeletingName="T_M_元号RowDeleting" msprop:Generator_RowChangingName="T_M_元号RowChanging" msprop:Generator_RowEvHandlerName="T_M_元号RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_元号RowDeleted" msprop:Generator_UserTableName="T_M_元号" msprop:Generator_RowChangedName="T_M_元号RowChanged" msprop:Generator_RowEvArgName="T_M_元号RowChangeEvent" msprop:Generator_RowClassName="T_M_元号Row">
+        <xs:element name="T_M_元号" msprop:Generator_TableClassName="T_M_元号DataTable" msprop:Generator_TableVarName="tableT_M_元号" msprop:Generator_RowChangedName="T_M_元号RowChanged" msprop:Generator_TablePropName="T_M_元号" msprop:Generator_RowDeletingName="T_M_元号RowDeleting" msprop:Generator_RowChangingName="T_M_元号RowChanging" msprop:Generator_RowEvHandlerName="T_M_元号RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_元号RowDeleted" msprop:Generator_RowClassName="T_M_元号Row" msprop:Generator_UserTableName="T_M_元号" msprop:Generator_RowEvArgName="T_M_元号RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" />
@@ -1159,7 +1159,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_資料配付区分" msprop:Generator_TableClassName="T_M_資料配付区分DataTable" msprop:Generator_TableVarName="tableT_M_資料配付区分" msprop:Generator_TablePropName="T_M_資料配付区分" msprop:Generator_RowDeletingName="T_M_資料配付区分RowDeleting" msprop:Generator_RowChangingName="T_M_資料配付区分RowChanging" msprop:Generator_RowEvHandlerName="T_M_資料配付区分RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_資料配付区分RowDeleted" msprop:Generator_UserTableName="T_M_資料配付区分" msprop:Generator_RowChangedName="T_M_資料配付区分RowChanged" msprop:Generator_RowEvArgName="T_M_資料配付区分RowChangeEvent" msprop:Generator_RowClassName="T_M_資料配付区分Row">
+        <xs:element name="T_M_資料配付区分" msprop:Generator_TableClassName="T_M_資料配付区分DataTable" msprop:Generator_TableVarName="tableT_M_資料配付区分" msprop:Generator_RowChangedName="T_M_資料配付区分RowChanged" msprop:Generator_TablePropName="T_M_資料配付区分" msprop:Generator_RowDeletingName="T_M_資料配付区分RowDeleting" msprop:Generator_RowChangingName="T_M_資料配付区分RowChanging" msprop:Generator_RowEvHandlerName="T_M_資料配付区分RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_資料配付区分RowDeleted" msprop:Generator_RowClassName="T_M_資料配付区分Row" msprop:Generator_UserTableName="T_M_資料配付区分" msprop:Generator_RowEvArgName="T_M_資料配付区分RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" />
@@ -1174,7 +1174,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_続柄" msprop:Generator_TableClassName="T_M_続柄DataTable" msprop:Generator_TableVarName="tableT_M_続柄" msprop:Generator_TablePropName="T_M_続柄" msprop:Generator_RowDeletingName="T_M_続柄RowDeleting" msprop:Generator_RowChangingName="T_M_続柄RowChanging" msprop:Generator_RowEvHandlerName="T_M_続柄RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_続柄RowDeleted" msprop:Generator_UserTableName="T_M_続柄" msprop:Generator_RowChangedName="T_M_続柄RowChanged" msprop:Generator_RowEvArgName="T_M_続柄RowChangeEvent" msprop:Generator_RowClassName="T_M_続柄Row">
+        <xs:element name="T_M_続柄" msprop:Generator_TableClassName="T_M_続柄DataTable" msprop:Generator_TableVarName="tableT_M_続柄" msprop:Generator_RowChangedName="T_M_続柄RowChanged" msprop:Generator_TablePropName="T_M_続柄" msprop:Generator_RowDeletingName="T_M_続柄RowDeleting" msprop:Generator_RowChangingName="T_M_続柄RowChanging" msprop:Generator_RowEvHandlerName="T_M_続柄RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_続柄RowDeleted" msprop:Generator_RowClassName="T_M_続柄Row" msprop:Generator_UserTableName="T_M_続柄" msprop:Generator_RowEvArgName="T_M_続柄RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" />
@@ -1188,7 +1188,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_但書" msprop:Generator_TableClassName="T_M_但書DataTable" msprop:Generator_TableVarName="tableT_M_但書" msprop:Generator_TablePropName="T_M_但書" msprop:Generator_RowDeletingName="T_M_但書RowDeleting" msprop:Generator_RowChangingName="T_M_但書RowChanging" msprop:Generator_RowEvHandlerName="T_M_但書RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_但書RowDeleted" msprop:Generator_UserTableName="T_M_但書" msprop:Generator_RowChangedName="T_M_但書RowChanged" msprop:Generator_RowEvArgName="T_M_但書RowChangeEvent" msprop:Generator_RowClassName="T_M_但書Row">
+        <xs:element name="T_M_但書" msprop:Generator_TableClassName="T_M_但書DataTable" msprop:Generator_TableVarName="tableT_M_但書" msprop:Generator_RowChangedName="T_M_但書RowChanged" msprop:Generator_TablePropName="T_M_但書" msprop:Generator_RowDeletingName="T_M_但書RowDeleting" msprop:Generator_RowChangingName="T_M_但書RowChanging" msprop:Generator_RowEvHandlerName="T_M_但書RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_但書RowDeleted" msprop:Generator_RowClassName="T_M_但書Row" msprop:Generator_UserTableName="T_M_但書" msprop:Generator_RowEvArgName="T_M_但書RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
@@ -1209,7 +1209,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_檀信徒別" msprop:Generator_TableClassName="T_M_檀信徒別DataTable" msprop:Generator_TableVarName="tableT_M_檀信徒別" msprop:Generator_TablePropName="T_M_檀信徒別" msprop:Generator_RowDeletingName="T_M_檀信徒別RowDeleting" msprop:Generator_RowChangingName="T_M_檀信徒別RowChanging" msprop:Generator_RowEvHandlerName="T_M_檀信徒別RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_檀信徒別RowDeleted" msprop:Generator_UserTableName="T_M_檀信徒別" msprop:Generator_RowChangedName="T_M_檀信徒別RowChanged" msprop:Generator_RowEvArgName="T_M_檀信徒別RowChangeEvent" msprop:Generator_RowClassName="T_M_檀信徒別Row">
+        <xs:element name="T_M_檀信徒別" msprop:Generator_TableClassName="T_M_檀信徒別DataTable" msprop:Generator_TableVarName="tableT_M_檀信徒別" msprop:Generator_RowChangedName="T_M_檀信徒別RowChanged" msprop:Generator_TablePropName="T_M_檀信徒別" msprop:Generator_RowDeletingName="T_M_檀信徒別RowDeleting" msprop:Generator_RowChangingName="T_M_檀信徒別RowChanging" msprop:Generator_RowEvHandlerName="T_M_檀信徒別RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_檀信徒別RowDeleted" msprop:Generator_RowClassName="T_M_檀信徒別Row" msprop:Generator_UserTableName="T_M_檀信徒別" msprop:Generator_RowEvArgName="T_M_檀信徒別RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" />
@@ -1223,7 +1223,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_地区" msprop:Generator_TableClassName="T_M_地区DataTable" msprop:Generator_TableVarName="tableT_M_地区" msprop:Generator_TablePropName="T_M_地区" msprop:Generator_RowDeletingName="T_M_地区RowDeleting" msprop:Generator_RowChangingName="T_M_地区RowChanging" msprop:Generator_RowEvHandlerName="T_M_地区RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_地区RowDeleted" msprop:Generator_UserTableName="T_M_地区" msprop:Generator_RowChangedName="T_M_地区RowChanged" msprop:Generator_RowEvArgName="T_M_地区RowChangeEvent" msprop:Generator_RowClassName="T_M_地区Row">
+        <xs:element name="T_M_地区" msprop:Generator_TableClassName="T_M_地区DataTable" msprop:Generator_TableVarName="tableT_M_地区" msprop:Generator_RowChangedName="T_M_地区RowChanged" msprop:Generator_TablePropName="T_M_地区" msprop:Generator_RowDeletingName="T_M_地区RowDeleting" msprop:Generator_RowChangingName="T_M_地区RowChanging" msprop:Generator_RowEvHandlerName="T_M_地区RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_地区RowDeleted" msprop:Generator_RowClassName="T_M_地区Row" msprop:Generator_UserTableName="T_M_地区" msprop:Generator_RowEvArgName="T_M_地区RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" />
@@ -1237,7 +1237,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_年回" msprop:Generator_TableClassName="T_M_年回DataTable" msprop:Generator_TableVarName="tableT_M_年回" msprop:Generator_TablePropName="T_M_年回" msprop:Generator_RowDeletingName="T_M_年回RowDeleting" msprop:Generator_RowChangingName="T_M_年回RowChanging" msprop:Generator_RowEvHandlerName="T_M_年回RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_年回RowDeleted" msprop:Generator_UserTableName="T_M_年回" msprop:Generator_RowChangedName="T_M_年回RowChanged" msprop:Generator_RowEvArgName="T_M_年回RowChangeEvent" msprop:Generator_RowClassName="T_M_年回Row">
+        <xs:element name="T_M_年回" msprop:Generator_TableClassName="T_M_年回DataTable" msprop:Generator_TableVarName="tableT_M_年回" msprop:Generator_RowChangedName="T_M_年回RowChanged" msprop:Generator_TablePropName="T_M_年回" msprop:Generator_RowDeletingName="T_M_年回RowDeleting" msprop:Generator_RowChangingName="T_M_年回RowChanging" msprop:Generator_RowEvHandlerName="T_M_年回RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_年回RowDeleted" msprop:Generator_RowClassName="T_M_年回Row" msprop:Generator_UserTableName="T_M_年回" msprop:Generator_RowEvArgName="T_M_年回RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" />
@@ -1252,7 +1252,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="T_M_墓地" msprop:Generator_TableClassName="T_M_墓地DataTable" msprop:Generator_TableVarName="tableT_M_墓地" msprop:Generator_TablePropName="T_M_墓地" msprop:Generator_RowDeletingName="T_M_墓地RowDeleting" msprop:Generator_RowChangingName="T_M_墓地RowChanging" msprop:Generator_RowEvHandlerName="T_M_墓地RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_墓地RowDeleted" msprop:Generator_UserTableName="T_M_墓地" msprop:Generator_RowChangedName="T_M_墓地RowChanged" msprop:Generator_RowEvArgName="T_M_墓地RowChangeEvent" msprop:Generator_RowClassName="T_M_墓地Row">
+        <xs:element name="T_M_墓地" msprop:Generator_TableClassName="T_M_墓地DataTable" msprop:Generator_TableVarName="tableT_M_墓地" msprop:Generator_RowChangedName="T_M_墓地RowChanged" msprop:Generator_TablePropName="T_M_墓地" msprop:Generator_RowDeletingName="T_M_墓地RowDeleting" msprop:Generator_RowChangingName="T_M_墓地RowChanging" msprop:Generator_RowEvHandlerName="T_M_墓地RowChangeEventHandler" msprop:Generator_RowDeletedName="T_M_墓地RowDeleted" msprop:Generator_RowClassName="T_M_墓地Row" msprop:Generator_UserTableName="T_M_墓地" msprop:Generator_RowEvArgName="T_M_墓地RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" />
@@ -1263,6 +1263,17 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="T_D_会費" msprop:Generator_TableClassName="T_D_会費DataTable" msprop:Generator_TableVarName="tableT_D_会費" msprop:Generator_TablePropName="T_D_会費" msprop:Generator_RowDeletingName="T_D_会費RowDeleting" msprop:Generator_RowChangingName="T_D_会費RowChanging" msprop:Generator_RowEvHandlerName="T_D_会費RowChangeEventHandler" msprop:Generator_RowDeletedName="T_D_会費RowDeleted" msprop:Generator_UserTableName="T_D_会費" msprop:Generator_RowChangedName="T_D_会費RowChanged" msprop:Generator_RowEvArgName="T_D_会費RowChangeEvent" msprop:Generator_RowClassName="T_D_会費Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="檀家番号" msprop:Generator_ColumnVarNameInTable="column檀家番号" msprop:Generator_ColumnPropNameInRow="檀家番号" msprop:Generator_ColumnPropNameInTable="檀家番号Column" msprop:Generator_UserColumnName="檀家番号" type="xs:int" />
+              <xs:element name="会費No" msprop:Generator_ColumnVarNameInTable="column会費No" msprop:Generator_ColumnPropNameInRow="会費No" msprop:Generator_ColumnPropNameInTable="会費NoColumn" msprop:Generator_UserColumnName="会費No" type="xs:int" />
+              <xs:element name="入金日" msprop:Generator_ColumnVarNameInTable="column入金日" msprop:Generator_ColumnPropNameInRow="入金日" msprop:Generator_ColumnPropNameInTable="入金日Column" msprop:Generator_UserColumnName="入金日" type="xs:dateTime" />
+              <xs:element name="備考" msprop:Generator_ColumnVarNameInTable="column備考" msprop:Generator_ColumnPropNameInRow="備考" msprop:Generator_ColumnPropNameInTable="備考Column" msprop:Generator_UserColumnName="備考" type="xs:string" minOccurs="0" />
+              <xs:element name="入金額" msprop:Generator_ColumnVarNameInTable="column入金額" msprop:Generator_ColumnPropNameInRow="入金額" msprop:Generator_ColumnPropNameInTable="入金額Column" msprop:Generator_UserColumnName="入金額" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -1312,14 +1323,22 @@
       <xs:selector xpath=".//mstns:T_M_墓地" />
       <xs:field xpath="mstns:No" />
     </xs:unique>
+    <xs:unique name="T_D_会費Key1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:T_D_会費" />
+      <xs:field xpath="mstns:檀家番号" />
+      <xs:field xpath="mstns:会費No" />
+      <xs:field xpath="mstns:入金日" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="T_D_檀家T_D_過去帳" msdata:parent="T_D_檀家" msdata:child="T_D_過去帳" msdata:parentkey="檀家番号" msdata:childkey="檀家ID" msprop:Generator_UserChildTable="T_D_過去帳" msprop:Generator_ChildPropName="GetT_D_過去帳Rows" msprop:Generator_UserRelationName="T_D_檀家T_D_過去帳" msprop:Generator_RelationVarName="relationT_D_檀家T_D_過去帳" msprop:Generator_UserParentTable="T_D_檀家" msprop:Generator_ParentPropName="T_D_檀家Row" />
-      <msdata:Relationship name="T_M_続柄T_D_過去帳" msdata:parent="T_M_続柄" msdata:child="T_D_過去帳" msdata:parentkey="No" msdata:childkey="続柄ID" msprop:Generator_UserChildTable="T_D_過去帳" msprop:Generator_ChildPropName="GetT_D_過去帳Rows" msprop:Generator_UserRelationName="T_M_続柄T_D_過去帳" msprop:Generator_RelationVarName="relationT_M_続柄T_D_過去帳" msprop:Generator_UserParentTable="T_M_続柄" msprop:Generator_ParentPropName="T_M_続柄Row" />
-      <msdata:Relationship name="T_D_檀家T_D_資料配付区分" msdata:parent="T_D_檀家" msdata:child="T_D_資料配付区分" msdata:parentkey="檀家番号" msdata:childkey="檀家ID" msprop:Generator_UserChildTable="T_D_資料配付区分" msprop:Generator_ChildPropName="GetT_D_資料配付区分Rows" msprop:Generator_UserRelationName="T_D_檀家T_D_資料配付区分" msprop:Generator_RelationVarName="relationT_D_檀家T_D_資料配付区分" msprop:Generator_UserParentTable="T_D_檀家" msprop:Generator_ParentPropName="T_D_檀家Row" />
-      <msdata:Relationship name="T_M_資料配付区分T_D_資料配付区分" msdata:parent="T_M_資料配付区分" msdata:child="T_D_資料配付区分" msdata:parentkey="No" msdata:childkey="資料配付区分ID" msprop:Generator_UserChildTable="T_D_資料配付区分" msprop:Generator_ChildPropName="GetT_D_資料配付区分Rows" msprop:Generator_UserRelationName="T_M_資料配付区分T_D_資料配付区分" msprop:Generator_RelationVarName="relationT_M_資料配付区分T_D_資料配付区分" msprop:Generator_UserParentTable="T_M_資料配付区分" msprop:Generator_ParentPropName="T_M_資料配付区分Row" />
-      <msdata:Relationship name="T_M_檀信徒別T_D_檀家" msdata:parent="T_M_檀信徒別" msdata:child="T_D_檀家" msdata:parentkey="No" msdata:childkey="檀信徒別ID" msprop:Generator_UserChildTable="T_D_檀家" msprop:Generator_ChildPropName="GetT_D_檀家Rows" msprop:Generator_UserRelationName="T_M_檀信徒別T_D_檀家" msprop:Generator_RelationVarName="relationT_M_檀信徒別T_D_檀家" msprop:Generator_UserParentTable="T_M_檀信徒別" msprop:Generator_ParentPropName="T_M_檀信徒別Row" />
+      <msdata:Relationship name="T_D_檀家T_D_過去帳" msdata:parent="T_D_檀家" msdata:child="T_D_過去帳" msdata:parentkey="檀家番号" msdata:childkey="檀家ID" msprop:Generator_UserChildTable="T_D_過去帳" msprop:Generator_ChildPropName="GetT_D_過去帳Rows" msprop:Generator_UserRelationName="T_D_檀家T_D_過去帳" msprop:Generator_ParentPropName="T_D_檀家Row" msprop:Generator_RelationVarName="relationT_D_檀家T_D_過去帳" msprop:Generator_UserParentTable="T_D_檀家" />
+      <msdata:Relationship name="T_M_続柄T_D_過去帳" msdata:parent="T_M_続柄" msdata:child="T_D_過去帳" msdata:parentkey="No" msdata:childkey="続柄ID" msprop:Generator_UserChildTable="T_D_過去帳" msprop:Generator_ChildPropName="GetT_D_過去帳Rows" msprop:Generator_UserRelationName="T_M_続柄T_D_過去帳" msprop:Generator_ParentPropName="T_M_続柄Row" msprop:Generator_RelationVarName="relationT_M_続柄T_D_過去帳" msprop:Generator_UserParentTable="T_M_続柄" />
+      <msdata:Relationship name="T_D_檀家T_D_資料配付区分" msdata:parent="T_D_檀家" msdata:child="T_D_資料配付区分" msdata:parentkey="檀家番号" msdata:childkey="檀家ID" msprop:Generator_UserChildTable="T_D_資料配付区分" msprop:Generator_ChildPropName="GetT_D_資料配付区分Rows" msprop:Generator_UserRelationName="T_D_檀家T_D_資料配付区分" msprop:Generator_ParentPropName="T_D_檀家Row" msprop:Generator_RelationVarName="relationT_D_檀家T_D_資料配付区分" msprop:Generator_UserParentTable="T_D_檀家" />
+      <msdata:Relationship name="T_M_資料配付区分T_D_資料配付区分" msdata:parent="T_M_資料配付区分" msdata:child="T_D_資料配付区分" msdata:parentkey="No" msdata:childkey="資料配付区分ID" msprop:Generator_UserChildTable="T_D_資料配付区分" msprop:Generator_ChildPropName="GetT_D_資料配付区分Rows" msprop:Generator_UserRelationName="T_M_資料配付区分T_D_資料配付区分" msprop:Generator_ParentPropName="T_M_資料配付区分Row" msprop:Generator_RelationVarName="relationT_M_資料配付区分T_D_資料配付区分" msprop:Generator_UserParentTable="T_M_資料配付区分" />
+      <msdata:Relationship name="T_M_檀信徒別T_D_檀家" msdata:parent="T_M_檀信徒別" msdata:child="T_D_檀家" msdata:parentkey="No" msdata:childkey="檀信徒別ID" msprop:Generator_UserChildTable="T_D_檀家" msprop:Generator_ChildPropName="GetT_D_檀家Rows" msprop:Generator_UserRelationName="T_M_檀信徒別T_D_檀家" msprop:Generator_ParentPropName="T_M_檀信徒別Row" msprop:Generator_RelationVarName="relationT_M_檀信徒別T_D_檀家" msprop:Generator_UserParentTable="T_M_檀信徒別" />
+      <msdata:Relationship name="T_D_檀家_T_D_会費" msdata:parent="T_D_檀家" msdata:child="T_D_会費" msdata:parentkey="檀家番号" msdata:childkey="檀家番号" msprop:Generator_UserChildTable="T_D_会費" msprop:Generator_ChildPropName="GetT_D_会費Rows" msprop:Generator_UserRelationName="T_D_檀家_T_D_会費" msprop:Generator_ParentPropName="T_D_檀家Row" msprop:Generator_RelationVarName="relationT_D_檀家_T_D_会費" msprop:Generator_UserParentTable="T_D_檀家" />
+      <msdata:Relationship name="T_M_会費_T_D_会費" msdata:parent="T_M_会費" msdata:child="T_D_会費" msdata:parentkey="No" msdata:childkey="会費No" msprop:Generator_UserChildTable="T_D_会費" msprop:Generator_ChildPropName="GetT_D_会費Rows" msprop:Generator_UserRelationName="T_M_会費_T_D_会費" msprop:Generator_ParentPropName="T_M_会費Row" msprop:Generator_RelationVarName="relationT_M_会費_T_D_会費" msprop:Generator_UserParentTable="T_M_会費" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

@@ -303,6 +303,10 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 	<summary>
   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
 </summary>
+</member><member name="T:DankaSearch.DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
 </member>
 </members>
 </doc>
