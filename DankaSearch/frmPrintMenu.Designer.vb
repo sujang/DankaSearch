@@ -30,38 +30,42 @@ Partial Class frmPrintMenu
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Button1.Location = New System.Drawing.Point(55, 39)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(295, 59)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "過去帳一覧出力"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
+        Me.Button2.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Button2.Location = New System.Drawing.Point(55, 104)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(295, 59)
         Me.Button2.TabIndex = 0
-        Me.Button2.Text = "Button1"
+        Me.Button2.Text = "現在帳一覧出力"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
+        Me.Button3.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Button3.Location = New System.Drawing.Point(55, 169)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(295, 59)
         Me.Button3.TabIndex = 0
-        Me.Button3.Text = "Button1"
+        Me.Button3.Text = "XXXXXXXXXX"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
+        Me.Button4.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Button4.Location = New System.Drawing.Point(55, 234)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(295, 59)
         Me.Button4.TabIndex = 0
-        Me.Button4.Text = "Button1"
+        Me.Button4.Text = "XXXXXXXXXX"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'frmPrintMenu

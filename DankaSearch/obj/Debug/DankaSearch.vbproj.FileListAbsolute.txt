@@ -13,3 +13,10 @@ C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\b
 C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.exe.manifest
 C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.application
 C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.frmDetail.resources
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\x64\SQLite.Interop.dll
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\System.Data.SQLite.dll
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.vbprojResolveAssemblyReference.cache
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.frmPrintMenu.resources
+C:\Users\sujang7\Documents\Visual Studio 2012\Projects\DankaSearch\DankaSearch\obj\Debug\DankaSearch.frmRegistParent.resources

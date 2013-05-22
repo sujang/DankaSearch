@@ -35,11 +35,12 @@ Partial Class frmRegistParent
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.戸主氏名Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.戸主氏名Label3 = New System.Windows.Forms.Label()
-        Me.JiinDataDataSet1 = New DankaSearch.JiinDataDataSet()
-        Me.T_D_檀家BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.檀家番号ComboBox = New System.Windows.Forms.ComboBox()
+        Me.T_D_檀家BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JiinDataDataSet1 = New DankaSearch.JiinDataDataSet()
+        Me.戸主氏名Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         檀家番号Label = New System.Windows.Forms.Label()
         戸主氏名Label = New System.Windows.Forms.Label()
         戸主氏名Label2 = New System.Windows.Forms.Label()
@@ -48,8 +49,8 @@ Partial Class frmRegistParent
         CType(Me.T_D_檀家BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.JiinDataDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.T_D_檀家BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.JiinDataDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '檀家番号Label
@@ -60,6 +61,33 @@ Partial Class frmRegistParent
         檀家番号Label.Size = New System.Drawing.Size(55, 12)
         檀家番号Label.TabIndex = 1
         檀家番号Label.Text = "檀家番号:"
+        '
+        '戸主氏名Label
+        '
+        戸主氏名Label.AutoSize = True
+        戸主氏名Label.Location = New System.Drawing.Point(40, 67)
+        戸主氏名Label.Name = "戸主氏名Label"
+        戸主氏名Label.Size = New System.Drawing.Size(55, 12)
+        戸主氏名Label.TabIndex = 2
+        戸主氏名Label.Text = "戸主氏名:"
+        '
+        '戸主氏名Label2
+        '
+        戸主氏名Label2.AutoSize = True
+        戸主氏名Label2.Location = New System.Drawing.Point(40, 63)
+        戸主氏名Label2.Name = "戸主氏名Label2"
+        戸主氏名Label2.Size = New System.Drawing.Size(55, 12)
+        戸主氏名Label2.TabIndex = 2
+        戸主氏名Label2.Text = "戸主氏名:"
+        '
+        '檀家番号Label2
+        '
+        檀家番号Label2.AutoSize = True
+        檀家番号Label2.Location = New System.Drawing.Point(40, 27)
+        檀家番号Label2.Name = "檀家番号Label2"
+        檀家番号Label2.Size = New System.Drawing.Size(55, 12)
+        檀家番号Label2.TabIndex = 3
+        檀家番号Label2.Text = "檀家番号:"
         '
         'JiinDataDataSet
         '
@@ -117,15 +145,6 @@ Partial Class frmRegistParent
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "檀家情報"
         '
-        '戸主氏名Label
-        '
-        戸主氏名Label.AutoSize = True
-        戸主氏名Label.Location = New System.Drawing.Point(40, 67)
-        戸主氏名Label.Name = "戸主氏名Label"
-        戸主氏名Label.Size = New System.Drawing.Size(55, 12)
-        戸主氏名Label.TabIndex = 2
-        戸主氏名Label.Text = "戸主氏名:"
-        '
         '戸主氏名Label1
         '
         Me.戸主氏名Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "戸主氏名", True))
@@ -148,14 +167,24 @@ Partial Class frmRegistParent
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "戸主情報"
         '
-        '戸主氏名Label2
+        '檀家番号ComboBox
         '
-        戸主氏名Label2.AutoSize = True
-        戸主氏名Label2.Location = New System.Drawing.Point(40, 63)
-        戸主氏名Label2.Name = "戸主氏名Label2"
-        戸主氏名Label2.Size = New System.Drawing.Size(55, 12)
-        戸主氏名Label2.TabIndex = 2
-        戸主氏名Label2.Text = "戸主氏名:"
+        Me.檀家番号ComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource1, "檀家番号", True))
+        Me.檀家番号ComboBox.FormattingEnabled = True
+        Me.檀家番号ComboBox.Location = New System.Drawing.Point(101, 24)
+        Me.檀家番号ComboBox.Name = "檀家番号ComboBox"
+        Me.檀家番号ComboBox.Size = New System.Drawing.Size(121, 20)
+        Me.檀家番号ComboBox.TabIndex = 4
+        '
+        'T_D_檀家BindingSource1
+        '
+        Me.T_D_檀家BindingSource1.DataMember = "T_D_檀家"
+        Me.T_D_檀家BindingSource1.DataSource = Me.JiinDataDataSet1
+        '
+        'JiinDataDataSet1
+        '
+        Me.JiinDataDataSet1.DataSetName = "JiinDataDataSet"
+        Me.JiinDataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         '戸主氏名Label3
         '
@@ -166,48 +195,30 @@ Partial Class frmRegistParent
         Me.戸主氏名Label3.TabIndex = 3
         Me.戸主氏名Label3.Text = "Label1"
         '
-        'JiinDataDataSet1
-        '
-        Me.JiinDataDataSet1.DataSetName = "JiinDataDataSet"
-        Me.JiinDataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'T_D_檀家BindingSource1
-        '
-        Me.T_D_檀家BindingSource1.DataMember = "T_D_檀家"
-        Me.T_D_檀家BindingSource1.DataSource = Me.JiinDataDataSet1
-        '
-        '檀家番号Label2
-        '
-        檀家番号Label2.AutoSize = True
-        檀家番号Label2.Location = New System.Drawing.Point(40, 27)
-        檀家番号Label2.Name = "檀家番号Label2"
-        檀家番号Label2.Size = New System.Drawing.Size(55, 12)
-        檀家番号Label2.TabIndex = 3
-        檀家番号Label2.Text = "檀家番号:"
-        '
-        '檀家番号ComboBox
-        '
-        Me.檀家番号ComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource1, "檀家番号", True))
-        Me.檀家番号ComboBox.FormattingEnabled = True
-        Me.檀家番号ComboBox.Location = New System.Drawing.Point(101, 24)
-        Me.檀家番号ComboBox.Name = "檀家番号ComboBox"
-        Me.檀家番号ComboBox.Size = New System.Drawing.Size(121, 20)
-        Me.檀家番号ComboBox.TabIndex = 4
-        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(115, 224)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "登録"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(197, 224)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "キャンセル"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'frmRegistParent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -219,8 +230,8 @@ Partial Class frmRegistParent
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.JiinDataDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.T_D_檀家BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.JiinDataDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -237,4 +248,5 @@ Partial Class frmRegistParent
     Friend WithEvents JiinDataDataSet1 As DankaSearch.JiinDataDataSet
     Friend WithEvents 戸主氏名Label3 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

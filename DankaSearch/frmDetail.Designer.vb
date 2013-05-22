@@ -75,13 +75,35 @@ Partial Class frmDetail
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.T_D_過去帳BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.T_D_会費BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.T_D_会費DataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.T_D_会費BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.T_D_檀家DataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewCheckBoxColumn2 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.DataGridViewCheckBoxColumn3 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewCheckBoxColumn4 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         檀家番号Label = New System.Windows.Forms.Label()
         ふりがなLabel = New System.Windows.Forms.Label()
         戸主氏名Label = New System.Windows.Forms.Label()
@@ -106,8 +128,10 @@ Partial Class frmDetail
         CType(Me.T_D_過去帳DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.T_D_過去帳BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
-        CType(Me.T_D_会費BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.T_D_会費DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.T_D_会費BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage3.SuspendLayout()
+        CType(Me.T_D_檀家DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '檀家番号Label
@@ -125,7 +149,7 @@ Partial Class frmDetail
         '
         ふりがなLabel.AutoSize = True
         ふりがなLabel.Font = New System.Drawing.Font("MS UI Gothic", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        ふりがなLabel.Location = New System.Drawing.Point(252, 60)
+        ふりがなLabel.Location = New System.Drawing.Point(309, 60)
         ふりがなLabel.Name = "ふりがなLabel"
         ふりがなLabel.Size = New System.Drawing.Size(73, 19)
         ふりがなLabel.TabIndex = 3
@@ -313,9 +337,9 @@ Partial Class frmDetail
         '
         Me.ふりがなLabel1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "ふりがな", True))
         Me.ふりがなLabel1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.ふりがなLabel1.Location = New System.Drawing.Point(331, 60)
+        Me.ふりがなLabel1.Location = New System.Drawing.Point(388, 60)
         Me.ふりがなLabel1.Name = "ふりがなLabel1"
-        Me.ふりがなLabel1.Size = New System.Drawing.Size(100, 23)
+        Me.ふりがなLabel1.Size = New System.Drawing.Size(208, 23)
         Me.ふりがなLabel1.TabIndex = 4
         Me.ふりがなLabel1.Text = "Label1"
         '
@@ -325,7 +349,7 @@ Partial Class frmDetail
         Me.戸主氏名Label1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.戸主氏名Label1.Location = New System.Drawing.Point(133, 60)
         Me.戸主氏名Label1.Name = "戸主氏名Label1"
-        Me.戸主氏名Label1.Size = New System.Drawing.Size(100, 23)
+        Me.戸主氏名Label1.Size = New System.Drawing.Size(170, 23)
         Me.戸主氏名Label1.TabIndex = 6
         Me.戸主氏名Label1.Text = "Label1"
         '
@@ -425,7 +449,7 @@ Partial Class frmDetail
         Me.備考Label1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.備考Label1.Location = New System.Drawing.Point(133, 256)
         Me.備考Label1.Name = "備考Label1"
-        Me.備考Label1.Size = New System.Drawing.Size(100, 23)
+        Me.備考Label1.Size = New System.Drawing.Size(620, 23)
         Me.備考Label1.TabIndex = 25
         Me.備考Label1.Text = "Label1"
         '
@@ -502,6 +526,7 @@ Partial Class frmDetail
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Location = New System.Drawing.Point(7, 19)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -609,11 +634,6 @@ Partial Class frmDetail
         Me.TabPage2.Text = "会費履歴"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'T_D_会費BindingSource
-        '
-        Me.T_D_会費BindingSource.DataMember = "T_D_会費"
-        Me.T_D_会費BindingSource.DataSource = Me.JiinDataDataSet
-        '
         'T_D_会費DataGridView
         '
         Me.T_D_会費DataGridView.AutoGenerateColumns = False
@@ -656,6 +676,155 @@ Partial Class frmDetail
         Me.DataGridViewTextBoxColumn14.HeaderText = "入金額"
         Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
         '
+        'T_D_会費BindingSource
+        '
+        Me.T_D_会費BindingSource.DataMember = "T_D_会費"
+        Me.T_D_会費BindingSource.DataSource = Me.JiinDataDataSet
+        '
+        'TabPage3
+        '
+        Me.TabPage3.AutoScroll = True
+        Me.TabPage3.Controls.Add(Me.T_D_檀家DataGridView)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(738, 196)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "現在帳"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'T_D_檀家DataGridView
+        '
+        Me.T_D_檀家DataGridView.AutoGenerateColumns = False
+        Me.T_D_檀家DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.T_D_檀家DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewCheckBoxColumn2, Me.DataGridViewCheckBoxColumn3, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewCheckBoxColumn4, Me.DataGridViewTextBoxColumn31})
+        Me.T_D_檀家DataGridView.DataSource = Me.T_D_檀家BindingSource
+        Me.T_D_檀家DataGridView.Location = New System.Drawing.Point(0, 0)
+        Me.T_D_檀家DataGridView.Name = "T_D_檀家DataGridView"
+        Me.T_D_檀家DataGridView.RowTemplate.Height = 21
+        Me.T_D_檀家DataGridView.Size = New System.Drawing.Size(738, 196)
+        Me.T_D_檀家DataGridView.TabIndex = 0
+        '
+        'DataGridViewCheckBoxColumn2
+        '
+        Me.DataGridViewCheckBoxColumn2.DataPropertyName = "削除"
+        Me.DataGridViewCheckBoxColumn2.HeaderText = "削除"
+        Me.DataGridViewCheckBoxColumn2.Name = "DataGridViewCheckBoxColumn2"
+        '
+        'DataGridViewCheckBoxColumn3
+        '
+        Me.DataGridViewCheckBoxColumn3.DataPropertyName = "印刷"
+        Me.DataGridViewCheckBoxColumn3.HeaderText = "印刷"
+        Me.DataGridViewCheckBoxColumn3.Name = "DataGridViewCheckBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn15
+        '
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "檀家番号"
+        Me.DataGridViewTextBoxColumn15.HeaderText = "檀家番号"
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "ふりがな"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "ふりがな"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        '
+        'DataGridViewTextBoxColumn17
+        '
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "戸主氏名"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "戸主氏名"
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        '
+        'DataGridViewTextBoxColumn18
+        '
+        Me.DataGridViewTextBoxColumn18.DataPropertyName = "檀信徒別ID"
+        Me.DataGridViewTextBoxColumn18.HeaderText = "檀信徒別ID"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        '
+        'DataGridViewTextBoxColumn19
+        '
+        Me.DataGridViewTextBoxColumn19.DataPropertyName = "入檀年月日"
+        Me.DataGridViewTextBoxColumn19.HeaderText = "入檀年月日"
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "〒"
+        Me.DataGridViewTextBoxColumn20.HeaderText = "〒"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        '
+        'DataGridViewTextBoxColumn21
+        '
+        Me.DataGridViewTextBoxColumn21.DataPropertyName = "住所1"
+        Me.DataGridViewTextBoxColumn21.HeaderText = "住所1"
+        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
+        '
+        'DataGridViewTextBoxColumn22
+        '
+        Me.DataGridViewTextBoxColumn22.DataPropertyName = "住所2"
+        Me.DataGridViewTextBoxColumn22.HeaderText = "住所2"
+        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
+        '
+        'DataGridViewTextBoxColumn23
+        '
+        Me.DataGridViewTextBoxColumn23.DataPropertyName = "地域名"
+        Me.DataGridViewTextBoxColumn23.HeaderText = "地域名"
+        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
+        '
+        'DataGridViewTextBoxColumn24
+        '
+        Me.DataGridViewTextBoxColumn24.DataPropertyName = "TEL"
+        Me.DataGridViewTextBoxColumn24.HeaderText = "TEL"
+        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
+        '
+        'DataGridViewTextBoxColumn25
+        '
+        Me.DataGridViewTextBoxColumn25.DataPropertyName = "FAX"
+        Me.DataGridViewTextBoxColumn25.HeaderText = "FAX"
+        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
+        '
+        'DataGridViewTextBoxColumn26
+        '
+        Me.DataGridViewTextBoxColumn26.DataPropertyName = "墓地"
+        Me.DataGridViewTextBoxColumn26.HeaderText = "墓地"
+        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        '
+        'DataGridViewTextBoxColumn27
+        '
+        Me.DataGridViewTextBoxColumn27.DataPropertyName = "備考"
+        Me.DataGridViewTextBoxColumn27.HeaderText = "備考"
+        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
+        '
+        'DataGridViewTextBoxColumn28
+        '
+        Me.DataGridViewTextBoxColumn28.DataPropertyName = "経度"
+        Me.DataGridViewTextBoxColumn28.HeaderText = "経度"
+        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        '
+        'DataGridViewTextBoxColumn29
+        '
+        Me.DataGridViewTextBoxColumn29.DataPropertyName = "緯度"
+        Me.DataGridViewTextBoxColumn29.HeaderText = "緯度"
+        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
+        '
+        'DataGridViewTextBoxColumn30
+        '
+        Me.DataGridViewTextBoxColumn30.DataPropertyName = "スケール"
+        Me.DataGridViewTextBoxColumn30.HeaderText = "スケール"
+        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
+        '
+        'DataGridViewCheckBoxColumn4
+        '
+        Me.DataGridViewCheckBoxColumn4.DataPropertyName = "dummy"
+        Me.DataGridViewCheckBoxColumn4.HeaderText = "dummy"
+        Me.DataGridViewCheckBoxColumn4.Name = "DataGridViewCheckBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn31
+        '
+        Me.DataGridViewTextBoxColumn31.DataPropertyName = "dummy金額"
+        Me.DataGridViewTextBoxColumn31.HeaderText = "dummy金額"
+        Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
+        '
         'frmDetail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -664,7 +833,7 @@ Partial Class frmDetail
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmDetail"
-        Me.Text = "frmDetail"
+        Me.Text = "詳細情報"
         CType(Me.JiinDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.T_D_檀家BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
@@ -675,8 +844,10 @@ Partial Class frmDetail
         CType(Me.T_D_過去帳DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.T_D_過去帳BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
-        CType(Me.T_D_会費BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.T_D_会費DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.T_D_会費BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage3.ResumeLayout(False)
+        CType(Me.T_D_檀家DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -724,4 +895,26 @@ Partial Class frmDetail
     Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn14 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents T_D_会費BindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
+    Friend WithEvents T_D_檀家DataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewCheckBoxColumn2 As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents DataGridViewCheckBoxColumn3 As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn18 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn19 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn20 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn21 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn22 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn23 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn24 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn25 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn26 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn27 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn28 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn29 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn30 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewCheckBoxColumn4 As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn31 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

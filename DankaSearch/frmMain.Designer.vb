@@ -336,7 +336,7 @@ Partial Class frmMain
         Me.btnRegistParent.Name = "btnRegistParent"
         Me.btnRegistParent.Size = New System.Drawing.Size(207, 43)
         Me.btnRegistParent.TabIndex = 0
-        Me.btnRegistParent.Text = "戸主登録"
+        Me.btnRegistParent.Text = "家族関連付け"
         Me.btnRegistParent.UseVisualStyleBackColor = True
         '
         'T_D_檀家TableAdapter

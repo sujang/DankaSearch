@@ -66,6 +66,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:DankaSearch.JiinDataDataSet.T_D_会費DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:DankaSearch.JiinDataDataSet.T_D_過去帳Row">
 	<summary>
 Represents strongly named DataRow class.
@@ -126,6 +130,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:DankaSearch.JiinDataDataSet.T_D_会費Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:DankaSearch.JiinDataDataSet.T_D_過去帳RowChangeEvent">
 	<summary>
 Row event argument class
@@ -183,6 +191,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:DankaSearch.JiinDataDataSet.T_M_墓地RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DankaSearch.JiinDataDataSet.T_D_会費RowChangeEvent">
 	<summary>
 Row event argument class
 </summary>

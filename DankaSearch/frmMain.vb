@@ -75,4 +75,14 @@ Public Class frmMain
         Dim detail As Form = New frmDetail(row)
         detail.ShowDialog()
     End Sub
+
+    Private Sub btnRegistParent_Click(sender As Object, e As EventArgs) Handles btnRegistParent.Click
+        Dim frm As Form = New frmRegistParent
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub btnReport_Click(sender As Object, e As EventArgs) Handles btnReport.Click
+        Dim frm As Form = New frmPrintMenu
+        frm.ShowDialog()
+    End Sub
 End Class
