@@ -445,11 +445,12 @@ Partial Class frmDetail
         '
         '備考Label1
         '
+        Me.備考Label1.AutoEllipsis = True
         Me.備考Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource, "備考", True))
         Me.備考Label1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.備考Label1.Location = New System.Drawing.Point(133, 256)
         Me.備考Label1.Name = "備考Label1"
-        Me.備考Label1.Size = New System.Drawing.Size(620, 23)
+        Me.備考Label1.Size = New System.Drawing.Size(620, 53)
         Me.備考Label1.TabIndex = 25
         Me.備考Label1.Text = "Label1"
         '
@@ -475,6 +476,8 @@ Partial Class frmDetail
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.ふりがなLabel1)
         Me.GroupBox1.Controls.Add(ふりがなLabel)
         Me.GroupBox1.Controls.Add(Dummy金額Label)
@@ -507,17 +510,19 @@ Partial Class frmDetail
         Me.GroupBox1.Controls.Add(FAXLabel)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(759, 294)
+        Me.GroupBox1.Size = New System.Drawing.Size(759, 327)
         Me.GroupBox1.TabIndex = 36
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "基本情報"
         '
         'GroupBox2
         '
+        Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox2.Controls.Add(Me.TabControl1)
-        Me.GroupBox2.Location = New System.Drawing.Point(13, 314)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 346)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(759, 247)
+        Me.GroupBox2.Size = New System.Drawing.Size(759, 215)
         Me.GroupBox2.TabIndex = 37
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "付随情報"
