@@ -1,15 +1,48 @@
 ﻿Imports System.Data.OleDb
 
 Public Class frmMain
+    Private IsSearchedValue As Boolean
+    Public Property IsSearched() As Boolean
+        Get
+            Return IsSearchedValue
+        End Get
+        Set(value As Boolean)
+            IsSearchedValue = value
+        End Set
+    End Property
 
-    Private Sub frmMain_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
-        Me.txtDankaNo.Text = Me.txtDankaNo.Text & e.KeyValue
+    Private Sub formOnKeyPress(sender As Object, e As KeyPressEventArgs)
+        If IsSearched Then
+            Me.txtDankaNo.Text = ""
+            IsSearched = False
+        End If
+        If Integer.TryParse(e.KeyChar.ToString, New Integer) Then
+            Me.txtDankaNo.Text += e.KeyChar.ToString
+        End If
+        e.Handled = False
+    End Sub
+    Private Sub formOnKeyDown(sender As Object, e As KeyEventArgs)
+        If e.KeyValue = Keys.Enter Then
+            e.Handled = True
+            Call btnSearch_Click(Nothing, Nothing)
+        End If
+    End Sub
+    Private Sub BindKeyPressEvent()
+        For Each ctrl As Control In Me.Controls
+            AddHandler ctrl.KeyPress, AddressOf formOnKeyPress
+            AddHandler ctrl.KeyDown, AddressOf formOnKeyDown
+        Next
     End Sub
 
+    Private Sub frmMain_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+
+    End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Try
             Call InitForm()
+            Call BindKeyPressEvent()
+
             '初期表示するために一旦バインド停止
             Me.T_D_檀家BindingSource.SuspendBinding()
             Me.T_D_過去帳DataGridView.DataSource = Nothing
@@ -26,6 +59,8 @@ Public Class frmMain
     End Sub
 
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+        IsSearched = True
+
         '初期表示するために一旦バインド停止
         Call InitForm()
 
