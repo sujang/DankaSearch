@@ -112,7 +112,8 @@ Public Class frmMain
     End Sub
 
     Private Sub btnRegistParent_Click(sender As Object, e As EventArgs) Handles btnRegistParent.Click
-        Dim frm As Form = New frmRegistParent
+        Dim row As JiinDataDataSet.T_D_檀家Row = DirectCast(DirectCast(Me.T_D_檀家BindingSource.Current, DataRowView).Row, JiinDataDataSet.T_D_檀家Row)
+        Dim frm As Form = New frmRegistParent(row)
         frm.ShowDialog()
     End Sub
 

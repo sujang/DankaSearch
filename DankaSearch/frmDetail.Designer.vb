@@ -143,7 +143,6 @@ Partial Class frmDetail
         檀家番号Label.Size = New System.Drawing.Size(89, 19)
         檀家番号Label.TabIndex = 1
         檀家番号Label.Text = "檀家番号:"
-        AddHandler 檀家番号Label.Click, AddressOf Me.檀家番号Label_Click
         '
         'ふりがなLabel
         '
@@ -552,6 +551,8 @@ Partial Class frmDetail
         '
         'T_D_過去帳DataGridView
         '
+        Me.T_D_過去帳DataGridView.AllowUserToAddRows = False
+        Me.T_D_過去帳DataGridView.AllowUserToDeleteRows = False
         Me.T_D_過去帳DataGridView.AutoGenerateColumns = False
         Me.T_D_過去帳DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.T_D_過去帳DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewCheckBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
@@ -641,6 +642,8 @@ Partial Class frmDetail
         '
         'T_D_会費DataGridView
         '
+        Me.T_D_会費DataGridView.AllowUserToAddRows = False
+        Me.T_D_会費DataGridView.AllowUserToDeleteRows = False
         Me.T_D_会費DataGridView.AutoGenerateColumns = False
         Me.T_D_会費DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.T_D_会費DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14})
@@ -700,6 +703,8 @@ Partial Class frmDetail
         '
         'T_D_檀家DataGridView
         '
+        Me.T_D_檀家DataGridView.AllowUserToAddRows = False
+        Me.T_D_檀家DataGridView.AllowUserToDeleteRows = False
         Me.T_D_檀家DataGridView.AutoGenerateColumns = False
         Me.T_D_檀家DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.T_D_檀家DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewCheckBoxColumn2, Me.DataGridViewCheckBoxColumn3, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewCheckBoxColumn4, Me.DataGridViewTextBoxColumn31})

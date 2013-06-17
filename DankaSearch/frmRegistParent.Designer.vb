@@ -35,12 +35,10 @@ Partial Class frmRegistParent
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.戸主氏名Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.檀家番号ComboBox = New System.Windows.Forms.ComboBox()
-        Me.T_D_檀家BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.JiinDataDataSet1 = New DankaSearch.JiinDataDataSet()
+        Me.cmbDanka = New System.Windows.Forms.ComboBox()
         Me.戸主氏名Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnRegist = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
         檀家番号Label = New System.Windows.Forms.Label()
         戸主氏名Label = New System.Windows.Forms.Label()
         戸主氏名Label2 = New System.Windows.Forms.Label()
@@ -49,8 +47,6 @@ Partial Class frmRegistParent
         CType(Me.T_D_檀家BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.T_D_檀家BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.JiinDataDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         '檀家番号Label
@@ -157,7 +153,7 @@ Partial Class frmRegistParent
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(檀家番号Label2)
-        Me.GroupBox2.Controls.Add(Me.檀家番号ComboBox)
+        Me.GroupBox2.Controls.Add(Me.cmbDanka)
         Me.GroupBox2.Controls.Add(戸主氏名Label2)
         Me.GroupBox2.Controls.Add(Me.戸主氏名Label3)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 112)
@@ -167,24 +163,13 @@ Partial Class frmRegistParent
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "戸主情報"
         '
-        '檀家番号ComboBox
+        'cmbDanka
         '
-        Me.檀家番号ComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.T_D_檀家BindingSource1, "檀家番号", True))
-        Me.檀家番号ComboBox.FormattingEnabled = True
-        Me.檀家番号ComboBox.Location = New System.Drawing.Point(101, 24)
-        Me.檀家番号ComboBox.Name = "檀家番号ComboBox"
-        Me.檀家番号ComboBox.Size = New System.Drawing.Size(121, 20)
-        Me.檀家番号ComboBox.TabIndex = 4
-        '
-        'T_D_檀家BindingSource1
-        '
-        Me.T_D_檀家BindingSource1.DataMember = "T_D_檀家"
-        Me.T_D_檀家BindingSource1.DataSource = Me.JiinDataDataSet1
-        '
-        'JiinDataDataSet1
-        '
-        Me.JiinDataDataSet1.DataSetName = "JiinDataDataSet"
-        Me.JiinDataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.cmbDanka.FormattingEnabled = True
+        Me.cmbDanka.Location = New System.Drawing.Point(101, 24)
+        Me.cmbDanka.Name = "cmbDanka"
+        Me.cmbDanka.Size = New System.Drawing.Size(121, 20)
+        Me.cmbDanka.TabIndex = 4
         '
         '戸主氏名Label3
         '
@@ -195,31 +180,31 @@ Partial Class frmRegistParent
         Me.戸主氏名Label3.TabIndex = 3
         Me.戸主氏名Label3.Text = "Label1"
         '
-        'Button1
+        'btnRegist
         '
-        Me.Button1.Location = New System.Drawing.Point(115, 224)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "登録"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnRegist.Location = New System.Drawing.Point(115, 224)
+        Me.btnRegist.Name = "btnRegist"
+        Me.btnRegist.Size = New System.Drawing.Size(75, 23)
+        Me.btnRegist.TabIndex = 5
+        Me.btnRegist.Text = "登録"
+        Me.btnRegist.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnCancel
         '
-        Me.Button2.Location = New System.Drawing.Point(197, 224)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "キャンセル"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnCancel.Location = New System.Drawing.Point(197, 224)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.TabIndex = 5
+        Me.btnCancel.Text = "キャンセル"
+        Me.btnCancel.UseVisualStyleBackColor = True
         '
         'frmRegistParent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.btnRegist)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmRegistParent"
@@ -230,8 +215,6 @@ Partial Class frmRegistParent
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.T_D_檀家BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.JiinDataDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -243,10 +226,8 @@ Partial Class frmRegistParent
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents 戸主氏名Label1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents 檀家番号ComboBox As System.Windows.Forms.ComboBox
-    Friend WithEvents T_D_檀家BindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents JiinDataDataSet1 As DankaSearch.JiinDataDataSet
+    Friend WithEvents cmbDanka As System.Windows.Forms.ComboBox
     Friend WithEvents 戸主氏名Label3 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnRegist As System.Windows.Forms.Button
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
 End Class
