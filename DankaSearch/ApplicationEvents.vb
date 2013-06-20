@@ -1,4 +1,6 @@
-﻿Namespace My
+﻿Imports System.Data.SQLite
+
+Namespace My
 
     ' 次のイベントは MyApplication に対して利用できます:
     ' 
@@ -14,6 +16,7 @@
         End Sub
 
         Private Sub MyApplication_Startup(sender As Object, e As ApplicationServices.StartupEventArgs) Handles Me.Startup
+            '関連テーブル作成
 
         End Sub
 

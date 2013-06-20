@@ -188,6 +188,9 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="DankaRelation.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="DankaSearch_一時キー.pfx" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
