@@ -37,12 +37,9 @@ Public Class frmDetail
     Private Function getFamilyDankaNoList(ByVal dankaNo As Integer) As List(Of Integer)
         Dim result As New List(Of Integer)
 
-        Using Connection As New SQLiteConnection
+        Using Connection As SQLiteConnection = SQLiteUtil.getConnection
             Dim Command As SQLiteCommand
             Dim reader As SQLiteDataReader
-
-            '接続文字列を設定
-            Connection.ConnectionString = "Version=3;Data Source=DankaRelation.db;New=False;Compress=True;"
 
             'オープン
             Connection.Open()
